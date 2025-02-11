@@ -1,0 +1,47 @@
+.paginationWrapper {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .paginationWrapper p {
+    margin-top: -1px;
+    background: #43967b;
+    width: 48px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .paginationWrapper button {
+    width: 100px;
+    height: 28px;
+    border: 0;
+    border-radius: 10px;
+    background: #43967b;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .paginationWrapper button[disabled] {
+    opacity: 0.5;
+  }
+  
+  @media (max-width: 767px) {
+    .paginationWrapper button {
+      width: 100px;
+      height: 28px;
+      font-size: 0.8rem;
+    }
+    .paginationWrapper p {
+      width: 48px;
+      height: 35px;
+      font-size: 0.8rem;
+    }
+  }
+  
