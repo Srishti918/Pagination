@@ -39,13 +39,15 @@ const Table = () => {
       <div className="container">
         <h1>Employee Data Table</h1>
         <table>
-            <tbody>
+        <thead>
           <tr>
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
             <th>Role</th>
           </tr>
+          </thead>
+          <tbody>
           {usersPerPage.map((user) => (
             <tr key={user.id}>
               <td>{user.id}</td>
