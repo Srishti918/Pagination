@@ -39,6 +39,7 @@ const Table = () => {
       <div className="container">
         <h1>Employee Data Table</h1>
         <table>
+            <tbody>
           <tr>
             <th>ID</th>
             <th>Name</th>
@@ -52,7 +53,9 @@ const Table = () => {
               <td>{user.email}</td>
               <td>{user.role}</td>
             </tr>
+            
           ))}
+          </tbody>
         </table>
         <Pagination
           updatePage={setCurrentPage}
